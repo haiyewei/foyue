@@ -23,7 +23,6 @@ import {
   Tooltip,
   useMediaQuery,
   useTheme,
-  Container,
 } from '@mui/material';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import ContentPasteIcon from '@mui/icons-material/ContentPaste';
@@ -282,7 +281,7 @@ const App = () => {
   };
 
   return (
-    <Container maxWidth="xl" disableGutters={isMobile} sx={{ px: isMobile ? 1 : 2 }}>
+   
       <Box sx={{ 
         display: 'flex', 
         flexDirection: 'column', 
@@ -793,8 +792,7 @@ const App = () => {
           </Alert>
         </Snackbar>
       </Box>
-    </Container>
   );
-};
+}
 
-export default App; 
+export default App;
